@@ -15,7 +15,7 @@
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.5",
-    "electron": "^23.1.1"
+    "electron": "^23.1.2"
   },
   "dependencies": {
     "pkg": "^5.8.0",
