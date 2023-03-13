@@ -1,3 +1,5 @@
+# Blocus Web Browser ***-- A work in progress***
+
 Secure chromium based web browser with configurable integrated privacy front-ends (coming soon).
 Made with [Electron](https://github.com/electron/electron).
 
