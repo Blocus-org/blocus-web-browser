@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blocus Web Browser</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="icon" type="image/png" href="../img/logo-blocus.png" />
+        <style>body{margin: 0;}</style>
+    </head>
+    <body>
+        <div class="titlebar">
+            <img class="dragable_zone" src="../img/dragable-zone.png">
+        </div>
+        <script type="text/javascript" src="../../renderer.js"></script>
+        <tab-group new-tab-button="true" sortable="true" position="1"></tab-group>
+        <script type="text/javascript" src="../../node_modules/electron-tabs/dist/electron-tabs.js"></script>
+        <script type="module" src="../js/tab.js"></script>
+    </body>
+</html>

@@ -1,15 +1,15 @@
 {
   "name": "blocus-web-browser",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Secure web browser with integrated privacy front-end",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test yet: --WIP-- \" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zqfd/blocus-web-browser/pull/new/master"
+    "url": "https://github.com/Zqfd/blocus-web-browser"
   },
   "author": "zqfd",
   "license": "AGPL-3.0-or-later",
@@ -18,7 +18,7 @@
     "electron": "^23.1.2"
   },
   "dependencies": {
-    "pkg": "^5.8.0",
-    "pupeteer": "^0.0.1"
+    "electron-context-menu": "^3.6.1",
+    "electron-tabs": "^1.0.1"
   }
 }
