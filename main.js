@@ -1,50 +1,75 @@
-const { app, BrowserWindow, Menu, MenuItem } = require('electron')
+const { app, BrowserWindow, session} = require('electron')
 const path = require('path')
-const contextMenu = require('electron-context-menu');
+const contextMenu = require('electron-context-menu')
+const URL = require('url').URL
 
 function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    frame: false,
     titleBarStyle: 'hidden',
     titleBarOverlay: true,
     icon: "src/img/logo-blocus.png",
     webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
       webviewTag: true,
-      sanbox: false,
+      sanbox: true,
       spellcheck: true,
       preload: path.join(__dirname, 'preload.js')
     }
   })
 
-  win.loadFile('src/html/index.html')
+  win.loadFile('src/renderer/index.html')
   //open the dev console of chromium
   win.webContents.openDevTools()
   win.webContents.on('did-finish-load', () => {
     contextMenu({
         window: win,
         prepend: (defaultActions, params, win) => [
-            // Can add custom right click actions here
         ],
         showInspectElement: false
-    });
-  });
+    })
+  })
 
   app.on("web-contents-created", (e, contents) => {
+    contents.on('will-attach-webview', (event, webPreferences, params) => {
+      delete webPreferences.preload
+      webPreferences.nodeIntegration = false
+      webPreferences.contextIsolation = true
+      webPreferences.sanbox = true
+      //if (!params.src.startsWith('https://example.com/')) {
+      //  event.preventDefault()
+      //}
+    })
+
     if (contents.getType() == "webview") {
-      // set context menu in webview contextMenu({ window: contents, });
       contextMenu({
           window: contents,
           prepend: (defaultActions, params, mainWindow) => [
-              // Can add custom right click actions here
           ],
           showInspectElement: true
-      });
+      })
     }
-  });
+  })
 }
 
 app.whenReady().then(() => {
+  session
+  .fromPartition('some-partition')
+  .setPermissionRequestHandler((webContents, permission, callback) => {
+    const parsedUrl = new URL(webContents.getURL())
+
+    if (permission === 'notifications') {
+      callback(false)
+    }
+
+    if (parsedUrl.protocol !== 'https:' || parsedUrl.host !== 'example.com') {
+      return callback(false)
+    }
+  })
+
   createWindow()
 
   app.on('activate', () => {

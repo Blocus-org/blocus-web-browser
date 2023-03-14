@@ -5,12 +5,13 @@
   "main": "main.js",
    "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {"icon": "src/img/logo-blocus.png"},
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "electron_quick_start"
+            "setupIcon": "src/img/logo-blocus",
+            "name": "blocus-web-browser"
           }
         },
         {
@@ -21,11 +22,17 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "icon": "src/img/logo-blocus.png",
+            "name": "blocus-web-browser"
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
-          "config": {}
+          "config": {
+            "icon": "src/img/logo-blocus.png",
+            "name": "blocus-web-browser"
+          }
         }
       ]
     }
