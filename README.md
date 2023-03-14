@@ -23,7 +23,7 @@ Made with [Electron](https://github.com/electron/electron).
 ### In future updates
 
 - Index.html with more than a blank page without tabs.
-- Customisable toolbar.
+- Customisable url toolbar.
 - Proxy.
 - Simple and light interface.
 - A lot of work for MacOs compatibility

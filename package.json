@@ -1,6 +1,6 @@
 {
   "name": "blocus-web-browser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Secure web browser with integrated privacy front-end",
   "main": "main.js",
    "config": {
