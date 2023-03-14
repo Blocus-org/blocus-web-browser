@@ -23,7 +23,7 @@ function createWindow () {
 
   win.loadFile('src/renderer/index.html')
   //open the dev console of chromium
-  win.webContents.openDevTools()
+  //win.webContents.openDevTools()
   win.webContents.on('did-finish-load', () => {
     contextMenu({
         window: win,
