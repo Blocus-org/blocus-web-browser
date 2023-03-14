@@ -51,7 +51,7 @@ npm --version
 - Theses commands will clone the repository and install dependencies:<br>
 ```sh
 git clone https://github.com/Zqfd/blocus-web-browser.git
-cd main
+cd blocus-web-browser
 npm install
 ```
 
@@ -74,7 +74,7 @@ npm --version
 - Theses commands will clone the repository and install dependencies:
 ```sh
 git clone https://github.com/Zqfd/blocus-web-browser.git
-cd main
+cd blocus-web-browser
 npm install
 ```
 - Run the app
