@@ -9,7 +9,7 @@ Made with [Electron](https://github.com/electron/electron).
     - [MacOs](#installmac) (coming soon)
 
 - Testing branch
-    - [Packages](https://github.com/Zqfd?tab=packages&repo_name=blocus-web-browser) (Windows 10 only)
+    - [Releases](https://github.com/Zqfd/blocus-web-browser/releases) (Windows 10 only)
 
 
 ### Related repos coming soon
