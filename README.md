@@ -3,10 +3,13 @@
 Secure chromium based web browser with configurable integrated privacy front-ends (coming soon).
 Made with [Electron](https://github.com/electron/electron).
 
-- [Installation](#install).
- - [Windows](#installwin)
- - [Linux](#installdeb) (unstable)
- - [MacOs](#installmac) (coming soon)
+- Dev installation
+    - [Windows](#installwin)
+    - [Linux](#installdeb) (unstable)
+    - [MacOs](#installmac) (coming soon)
+
+- Testing branch
+    - [Packages](https://github.com/Zqfd?tab=packages&repo_name=blocus-web-browser) (Windows 10 only)
 
 
 ### Related repos coming soon
@@ -23,7 +26,7 @@ Made with [Electron](https://github.com/electron/electron).
 - Customisable toolbar.
 - Proxy.
 - Simple and light interface.
-- A lot of work
+- A lot of work for MacOs compatibility
 
 # Developpement
 
@@ -35,7 +38,7 @@ Made with [Electron](https://github.com/electron/electron).
 
 ## <a name="install">Installation<a>
 
-#### <a name="installwin">Install on Windows 10</a><br><span style="font-size:10px;">(PowerShell)</span>
+#### <a name="installwin">Install on Windows 10</a><br><span style="font-size:10px;">(PowerShell / Git Bash)</span>
 
 - Download [Nodejs](https://nodejs.org/en/download/)18.x.x for windows. This setup will also install npm.
 - Check if it's ok:
