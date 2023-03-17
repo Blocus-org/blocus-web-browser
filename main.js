@@ -1,5 +1,5 @@
 //Config
-const rendererDevConsole = true
+const rendererDevConsole = false
 
 //Doing stuff
 const { app, BrowserWindow, session} = require('electron')
