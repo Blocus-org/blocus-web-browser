@@ -1,16 +1,23 @@
 # Blocus Web Browser ***-- A work in progress***
 
-Secure chromium based web browser with configurable integrated privacy front-ends (coming soon).
+Secure web browser with configurable privacy front-ends (coming soon).
 Made with [Electron](https://github.com/electron/electron).
 
 - Dev installation
     - [Windows](#installwin)
     - [Linux](#installdeb) (unstable)
-    - [MacOs](#installmac) (coming soon)
+    - [MacOs](#installmac) (coming soon or maybe not, i do not like apple so much)
 
 - Testing branch
     - [Releases](https://github.com/Zqfd/blocus-web-browser/releases) (Windows 10 only)
 
+- How to contribute?
+    - See [how to report a vulnerability](https://github.com/Zqfd/blocus-web-browser/blob/main/SECURITY.md)
+    - Fork or clone the main branch
+    - Do improvements, modifications, etc
+    - Push to a new branch in the blocus web browser repository (pseudo-nameofthepatch)
+    - Pull request explaining changes
+    - Feel free to ask some questions: [discussion](https://github.com/Zqfd/blocus-web-browser/discussions)
 
 ### Related repos coming soon
 
@@ -84,8 +91,4 @@ npm install
 ```sh
 npm start
 ```
-
-#### <a name="installmac">Install on MacOs</a>
-
-- Coming soon
 
