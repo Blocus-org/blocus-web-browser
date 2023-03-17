@@ -3,14 +3,16 @@
   "version": "0.0.3",
   "description": "Secure web browser with integrated privacy front-end",
   "main": "main.js",
-   "config": {
+  "config": {
     "forge": {
-      "packagerConfig": {"icon": "src/img/logo-blocus.png"},
+      "packagerConfig": {
+        "icon": "src/img/logo-blocus"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "setupIcon": "src/img/logo-blocus",
+            "skipUpdateIcon": "true",
             "name": "blocus-web-browser"
           }
         },
@@ -23,14 +25,14 @@
         {
           "name": "@electron-forge/maker-deb",
           "config": {
-            "icon": "src/img/logo-blocus.png",
+            "icon": "src/img/logo-blocus",
             "name": "blocus-web-browser"
           }
         },
         {
           "name": "@electron-forge/maker-rpm",
           "config": {
-            "icon": "src/img/logo-blocus.png",
+            "icon": "src/img/logo-blocus",
             "name": "blocus-web-browser"
           }
         }
@@ -57,6 +59,7 @@
     "electron": "^23.1.2"
   },
   "dependencies": {
+    "@electron-forge/maker-rpm": "^6.0.5",
     "electron-context-menu": "^3.6.1",
     "electron-tabs": "^1.0.1"
   }
