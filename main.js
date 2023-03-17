@@ -1,3 +1,7 @@
+//Config
+const rendererDevConsole = true
+
+//Doing stuff
 const { app, BrowserWindow, session} = require('electron')
 const path = require('path')
 const contextMenu = require('electron-context-menu')
@@ -5,8 +9,8 @@ const URL = require('url').URL
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 900,
+    height: 700,
     frame: false,
     titleBarStyle: 'hidden',
     titleBarOverlay: true,
@@ -22,8 +26,11 @@ function createWindow () {
   })
 
   win.loadFile('src/renderer/index.html')
-  //open the dev console of chromium
-  //win.webContents.openDevTools()
+
+  if(rendererDevConsole === true){
+    win.webContents.openDevTools()
+  }
+
   win.webContents.on('did-finish-load', () => {
     contextMenu({
         window: win,
