@@ -1,11 +1,18 @@
 
-.dragable_zone{
+.titlebar{
   -webkit-app-region: drag;
-  height: 20px;
-  width: auto;
+  height: 22px;
+  width: 30%;
   display: block;
-  margin-right: 150px;
   position: fixed;
-  top: 6px;
   right: 0px;
+  top: 1px;
+  border-left:solid 1px gray ;
+  background: white;
+  opacity: 0.8;
+  background: repeating-linear-gradient( 45deg, gray, gray 5px, #e5e5f7 5px, #e5e5f7 10px );
 }
+button{
+  -webkit-app-region: no-drag;
+}
+
