@@ -1,15 +1,15 @@
-# Blocus Web Browser ***-- A work in progress***
+# Blocus Web Browser ***-- A work in progress Alpha 0.0.5***
 
 Secure web browser with configurable privacy front-ends (coming soon).
 Made with [Electron](https://github.com/electron/electron).
+
+- Testing installation
+    - [Releases](https://github.com/Zqfd/blocus-web-browser/releases) (Windows 10 only)
 
 - Dev installation
     - [Windows](#installwin)
     - [Linux](#installdeb) (unstable)
     - [MacOs](#installmac) (coming soon or maybe not, i do not like apple so much)
-
-- Testing branch
-    - [Releases](https://github.com/Zqfd/blocus-web-browser/releases) (Windows 10 only)
 
 - How to contribute?
     - See [how to report a vulnerability](https://github.com/Zqfd/blocus-web-browser/blob/main/SECURITY.md)
