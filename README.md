@@ -19,12 +19,12 @@ Made with [Electron](https://github.com/electron/electron).
     - Pull request explaining changes
     - Feel free to ask some questions: [discussion](https://github.com/Zqfd/blocus-web-browser/discussions)
 
-### Related repos coming soon
+### Related repos
 
-- Blocus private search engine (search.blocus.sx).
-- Blocus Invidious instance (not-ytb.blocus.sx).
-- Blocus WebMail (Postfix TLS Swiss Server with opensource GUI).
-- Blocus ChatRoom (WebApp PHP instant messaging with encrypted database).
+- [Blocus Search Engine](https://github.com/Zqfd/blocus-search-engine)
+- Blocus Invidious instance (not-ytb.blocus.sx). wip
+- Blocus WebMail (Postfix TLS Swiss Server with opensource GUI). wip
+- Blocus ChatRoom (WebApp PHP instant messaging with encrypted database). wip
 
 
 ### In future updates
