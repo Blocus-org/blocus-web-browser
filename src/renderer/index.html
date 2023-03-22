@@ -9,10 +9,24 @@
         <style>body{margin: 0;}</style>
     </head>
         <div class="titlebar">
+          <p class="version">Blocus Web Browser (alpha v0.0.6)</p>
         </div>
-    <body>
+    <body style="border-radius: 500px">
         <tab-group class="bigtabgroup"new-tab-button="true" sortable="true" position="1">
             <style type="text/css">
+              :host {
+                --tab-color: #CBCBCB;
+                --tab-active-color: #CBCBCB;
+                --tab-border-color: #757575;
+                --tab-background: #545454;
+                --tab-transition: background-color 200ms ease-out, color 200ms ease-out;
+                --tab-active-background: #757575;
+                --tag-hover-color: currentcolor;
+                --tag-hover-background: #F1F3F4;
+                --button-color: #CBCBCB;
+                --button-hover-background: #DADCE0;
+                --button-hover-color: #383a3e;
+                }
                 webview {
                   position: absolute;
                   top: 20px;
@@ -21,11 +35,39 @@
                   height: calc(100% - 20px);
                 }
 
-                .tab visible{
+                .nav{
+                  -webkit-app-region: drag;
+                  background-color: #424242;
+                  border: none;
+                }
+
+                .buttons{
+                  -webkit-app-region: no-drag;
+                  border: none;
+                  z-index: 10;
+                }
+
+                .tab{
+                  -webkit-app-region: no-drag;;
+                  width: 150px;
+                  border-top-right-radius: 10px;
+                  border-top-left-radius: 30px;
+                  }
+
+                .tab-title{
                   max-width: 100px;
+                  overflow: hidden !important;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+
+                .tab-close{
+                  position: absolute;
+                  right: 10px;
                 }
 
                 .toolbar{
+                  display: flex;
                   -webkit-user-select: none;
                   position: fixed;
                   top: 30px;
@@ -33,13 +75,9 @@
                   min-height: 25px;
                   max-height: 25px;
                   z-index: 10;
-                  background-color: white;
+                  background-color: #757575;
                   max-height: 10%;
                   border-bottom: solid 2px gray;
-                }
-
-                .forwbutton, .backbutton, .refreshbutton, .stopbutton, .toolbar-input, .formtoolbar, .buttondiv{
-                  display: inline;
                 }
 
                 .divurl{
@@ -47,7 +85,6 @@
                   min-height: 23px;
                   max-height: 23px;
                   padding: 3px;
-                  display: inline-block;
                   margin: auto;
                 }
 
@@ -56,29 +93,30 @@
                 }
 
                 .toolbar-input{
+                  color: #CBCBCB;
                   border: none;
                   border-radius: 10px;
                   width: 100%;
                   height: 14px;
-                  background: #E0E0E0;
+                  background: #424242;
                   margin: auto 2px;
                   margin-left: 10px;
                   padding-left:15px ;
                 }
 
                 .buttondiv{
+                  display: flex;
+                  top: 3px;
                   width: 90px;
-                  min-height: 20px;
-                  max-height: 20px;
-                  margin: 0px;
-                  padding: 0px;
-                  margin-left: 5px;
+                  margin-left: 10px;
+                  margin-top: 3px;
+                  margin-bottom: 3px;
                 }
 
                 .forwbutton, .backbutton, .refreshbutton, .stopbutton{
                   border-radius: 360px;
                   border: none;
-                  background-color: white;
+                  background-color: transparent;
                   height: 17px;
                   width: 17px;
                   margin: auto 15px;
@@ -91,8 +129,8 @@
 
                 .imgforw, .imgback, .refreshbuttonimg, .stopbuttonimg{
                   position: relative;
-                  height: 16px;
-                  width: 16px;
+                  height: 14px;
+                  width: 14px;
                   margin: auto;
                   display: block;
                 }

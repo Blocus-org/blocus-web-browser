@@ -11,13 +11,18 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 900,
     height: 700,
-    frame: false,
+    frame: true,
+    //transparent: true,
     titleBarStyle: 'hidden',
-    titleBarOverlay: true,
+    titleBarOverlay: {
+    color: '#424242',
+    symbolColor: '#fff',
+    height: 20
+    },
     icon: "src/img/logo-blocus.png",
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false,
+      nodeIntegration: false,
+      contextIsolation: true,
       webviewTag: true,
       sanbox: true,
       spellcheck: true,
@@ -46,9 +51,6 @@ function createWindow () {
       webPreferences.nodeIntegration = false
       webPreferences.contextIsolation = true
       webPreferences.sanbox = true
-      //if (!params.src.startsWith('https://example.com/')) {
-      //  event.preventDefault()
-      //}
     })
 
     if (contents.getType() == "webview") {

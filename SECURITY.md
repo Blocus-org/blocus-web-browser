@@ -3,6 +3,7 @@
 ## - Open a new [issue](https://github.com/Zqfd/blocus-web-browser/issues)
 ***Report Template:***
 
+Ask questions under the Discussions tab if you need help
 
 App version(s):
 - ...
