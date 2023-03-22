@@ -1,5 +1,6 @@
 //Config
 const log = true
+const err = true
 
 //Doing stuff
 var backButton = document.createElement('button')
@@ -11,14 +12,13 @@ var formToolBar = document.createElement('form')
 var forwButton = document.createElement('button')
 var meta1 = document.getElementById("meta1-csp")
 var divUrl = document.createElement('div')
-var pos = ''
-var pageTitle = ''
+var pageTitle = 'Loading...'
 var refreshButton = document.createElement('button')
 var refreshButtonImg = document.createElement('img')
 var stopButton = document.createElement('button')
 var stopButtonImg = document.createElement('img')
 var urlBar = document.createElement('input')
-var url = ''
+var url = 'Loading...'
 var webview = ''
 
 const indicator = ""
@@ -39,7 +39,7 @@ function back(){
   if(webview.canGoBack())
     webview.goBack()
   if (log === true) {
-    console.log("log: Backward")
+    console.log("log: Back")
   }
 }
 
@@ -51,26 +51,56 @@ function refresh(){
 }
 
 tabGroup.on("tab-added", (tab, tabGroup) => {
+  tab.once("webview-dom-ready", (tab) => {
+    webview = tab.webview
+  })
+  if(log === true) {
+    console.log("log: New tab")
+  }
+})
+
+tabGroup.on("tab-active", (tab, tabGroup) => {
   tab.on("webview-dom-ready", (tab) => {
     webview = tab.webview
     url = webview.getURL()
     pageTitle = webview.getTitle()
+
     tab.setTitle(pageTitle)
     urlBar.setAttribute("value", url)
     forwButton.setAttribute("onclick", "forward()")
     backButton.setAttribute("onclick", "back()")
     refreshButton.setAttribute("onclick", "refresh()")
   })
-  if(log === true){
-      console.log('log: New tab', url)
-      console.log('log: Total tabs: ', tabGroup.getTabs())
+
+  tab.on("active", (tab) => {
+    if(tabGroup.getTab(1) != null) {
+      try{
+        webview = tab.webview
+        url = webview.getURL()
+        pageTitle = webview.getTitle()
+
+        tab.setTitle(pageTitle)
+        urlBar.setAttribute("value", url)
+        forwButton.setAttribute("onclick", "forward()")
+        backButton.setAttribute("onclick", "back()")
+        refreshButton.setAttribute("onclick", "refresh()")
+      }
+      catch{
+        if (err === true) {
+          console.log('%cERR: Webview not ready... waiting next event... (WIP)', 'color: red')
+        }
+      }
+    }
+  })
+  if(log === true) {
+      console.log("log: Active tab changed")
   }
 })
 
 tabGroup.on("tab-removed", (tab, tabGroup) => {
-  if(log === true){
-    console.log('log: Deleted tab')
-    console.log('log: Total tabs: ', tabGroup.getTabs())
+  urlBar.setAttribute("value", "")
+  if(log === true) {
+    console.log("log: Deleted tab")
   }
 })
 
@@ -116,12 +146,11 @@ backButton.appendChild(imgBack)
 forwButton.appendChild(imgForw)
 formToolBar.appendChild(urlBar)
 
-
 views.prepend(toolBar)
 
 tabGroup.setDefaultTab({
   title: pageTitle,
-  src: "https://google.com",
+  src: "http://localhost",
   active: true
 })
 tabGroup.addTab();
