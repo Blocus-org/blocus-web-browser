@@ -1,10 +1,10 @@
-# Blocus Web Browser ***-- A work in progress Alpha 0.0.5***
+# Blocus Web Browser ***-- A work in progress Alpha 0.0.6***
 
 Secure web browser with configurable privacy front-ends (coming soon).
 Made with [Electron](https://github.com/electron/electron).
 
 - Testing installation
-    - [Releases](https://github.com/Zqfd/blocus-web-browser/releases) (Windows 10 only)
+    - [Releases](https://github.com/Zqfd/blocus-web-browser/tags) (Windows 10 only)
 
 - Dev installation
     - [Windows](#installwin)
@@ -45,7 +45,7 @@ Made with [Electron](https://github.com/electron/electron).
 
 ## <a name="install">Installation<a>
 
-#### <a name="installwin">Install on Windows 10</a><br><span style="font-size:10px;">(PowerShell / Git Bash)</span>
+#### <a name="installwin">Install on Windows 10</a><br><span style="font-size:10px;">(Git Bash)</span>
 
 - Download [Nodejs](https://nodejs.org/en/download/)18.x.x for windows. This setup will also install npm.
 - Check if it's ok:
