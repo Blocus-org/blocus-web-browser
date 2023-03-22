@@ -150,7 +150,7 @@ views.prepend(toolBar)
 
 tabGroup.setDefaultTab({
   title: pageTitle,
-  src: "http://localhost",
+  src: "https://duckduckgo.com",
   active: true
 })
 tabGroup.addTab();
