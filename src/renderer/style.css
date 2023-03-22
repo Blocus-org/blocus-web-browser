@@ -1,18 +1,26 @@
 
 .titlebar{
-  -webkit-app-region: drag;
+  -webkit-user-select: none;
   height: 22px;
-  width: 30%;
+  width: 100%;
   display: block;
   position: fixed;
-  right: 0px;
+  margin: auto;
   top: 1px;
-  border-left:solid 1px gray ;
-  background: white;
-  opacity: 0.8;
-  background: repeating-linear-gradient( 45deg, gray, gray 5px, #e5e5f7 5px, #e5e5f7 10px );
+  border:none;
+  background: transparent;
+  padding: auto;
+
 }
+
 button{
+  z-index: 10;
   -webkit-app-region: no-drag;
 }
 
+.version{
+  text-align: center;
+  font-family: sans-serif;
+  color: #CBCBCB;
+  font-size: 11px;
+}
