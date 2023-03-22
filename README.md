@@ -1,4 +1,5 @@
 # Blocus Web Browser ***-- A work in progress Alpha 0.0.6***
+![preview](https://user-images.githubusercontent.com/126873130/226960263-b621df59-76b3-44eb-ba73-2928d0aad20d.png)
 
 Secure web browser with configurable privacy front-ends (coming soon).
 Made with [Electron](https://github.com/electron/electron).
