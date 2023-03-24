@@ -1,16 +1,16 @@
-# Blocus Web Browser ***-- A work in progress Alpha 0.0.6***
-![preview](https://user-images.githubusercontent.com/126873130/226960263-b621df59-76b3-44eb-ba73-2928d0aad20d.png)
+# Blocus Web Browser ***-- A work in progress Alpha 0.0.7***
+![preview](src/img/preview.png)
 
 Secure web browser with configurable privacy front-ends (coming soon).
-Made with [Electron](https://github.com/electron/electron).
+Made with [Electron](https://github.com/electron/electron) (without node integration).
 
 - Testing installation
-    - [Releases](https://github.com/Zqfd/blocus-web-browser/tags) (Windows 10 only)
+    - [Releases](https://github.com/Zqfd/blocus-web-browser/tags) (Windows & Debian)
 
 - Dev installation
     - [Windows](#installwin)
-    - [Linux](#installdeb) (unstable)
-    - [MacOs](#installmac) (coming soon or maybe not, i do not like apple so much)
+    - [Linux](#installdeb)
+    - [MacOs](#installmac) (coming soon or maybe not, I do not like apple so much)
 
 - How to contribute?
     - See [how to report a vulnerability](https://github.com/Zqfd/blocus-web-browser/blob/main/SECURITY.md)
@@ -30,18 +30,18 @@ Made with [Electron](https://github.com/electron/electron).
 
 ### In future updates
 
-- Index.html with more than a blank page without tabs.
 - Customisable url toolbar.
-- Proxy.
+- Themes.
+- Proxies.
 - Simple and light interface.
 - A lot of work for MacOs compatibility
 
 # Developpement
 
 ## Compatibility
-- Tested on Windows 10.
+- Works on Windows 10.
 - Not yet tested on Windows 11.
-- Needs main.js rework for Linux.
+- Works on Debian
 - Not yet tested on MacOs.
 
 ## <a name="install">Installation<a>
