@@ -9,7 +9,7 @@
         <style>body{margin: 0;}</style>
     </head>
         <div class="titlebar">
-          <p class="version">Blocus Web Browser (alpha v0.0.6)</p>
+          <p class="version">Blocus Web Browser (alpha v0.0.7)</p>
         </div>
     <body style="border-radius: 500px">
         <tab-group class="bigtabgroup"new-tab-button="true" sortable="true" position="1">
@@ -32,7 +32,7 @@
                   top: 20px;
                   visibility: hidden;
                   width: 100%;
-                  height: calc(100% - 20px);
+                  height: calc(100% - 23px);
                 }
 
                 .nav{
@@ -113,7 +113,7 @@
                   margin-bottom: 3px;
                 }
 
-                .forwbutton, .backbutton, .refreshbutton, .stopbutton{
+                .forwbutton, .backbutton, .refreshorstopbutton{
                   border-radius: 360px;
                   border: none;
                   background-color: transparent;
@@ -123,18 +123,17 @@
                   padding: 0px;
                 }
 
-                .forwbutton:hover, .backbutton:hover, .refreshbutton:hover, .stopbutton:hover{
+                .forwbutton:hover, .backbutton:hover, .refreshorstopbutton:hover{
                   background-color: #E0E0E0;
                 }
 
-                .imgforw, .imgback, .refreshbuttonimg, .stopbuttonimg{
+                .imgforw, .imgback, .refreshorstopbuttonimg{
                   position: relative;
                   height: 14px;
                   width: 14px;
                   margin: auto;
                   display: block;
                 }
-
             </style>
         </tab-group>
         <script type="text/javascript" src="../../node_modules/electron-tabs/dist/electron-tabs.js"></script>
