@@ -4,11 +4,11 @@
 Secure web browser with configurable privacy front-ends (coming soon).
 Made with [Electron](https://github.com/electron/electron) (without node integration).
 
-
 ## Features
 - Integrated ad blocker (uBlock Origin)
-- Other fun things
+- Other fun things are coming
 
+## Install
 - Testing installation
     - [Releases](https://github.com/Zqfd/blocus-web-browser/tags) (Windows & Debian)
 
@@ -17,6 +17,7 @@ Made with [Electron](https://github.com/electron/electron) (without node integra
     - [Linux](#installdeb)
     - [MacOs](#installmac) (coming soon or maybe not, I do not like apple so much)
 
+## Contribution
 - How to contribute?
     - See [how to report a vulnerability](https://github.com/Zqfd/blocus-web-browser/blob/main/SECURITY.md)
     - Fork or clone the main branch
@@ -25,14 +26,14 @@ Made with [Electron](https://github.com/electron/electron) (without node integra
     - Pull request explaining changes
     - Feel free to ask some questions: [discussion](https://github.com/Zqfd/blocus-web-browser/discussions)
 
-### Related repos
+## Related repos
 
 - [Blocus Search Engine](https://github.com/Zqfd/blocus-search-engine)
 - Blocus Invidious instance (not-ytb.blocus.sx). wip
 - Blocus WebMail (Postfix TLS Swiss Server with opensource GUI). wip
 - Blocus ChatRoom (WebApp PHP instant messaging with encrypted database). wip
 
-### In future updates
+## In future updates
 
 - Customisable url toolbar.
 - Themes.
