@@ -4,6 +4,11 @@
 Secure web browser with configurable privacy front-ends (coming soon).
 Made with [Electron](https://github.com/electron/electron) (without node integration).
 
+
+## Features
+- Integrated ad blocker (uBlock Origin)
+- Other fun things
+
 - Testing installation
     - [Releases](https://github.com/Zqfd/blocus-web-browser/tags) (Windows & Debian)
 
@@ -26,11 +31,6 @@ Made with [Electron](https://github.com/electron/electron) (without node integra
 - Blocus Invidious instance (not-ytb.blocus.sx). wip
 - Blocus WebMail (Postfix TLS Swiss Server with opensource GUI). wip
 - Blocus ChatRoom (WebApp PHP instant messaging with encrypted database). wip
-
-
-### Features
-- Integrated ad blocker (uBlock Origin)
-- Other fun things
 
 ### In future updates
 
