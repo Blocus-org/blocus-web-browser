@@ -3,9 +3,15 @@ const rendererDevConsole = true
 
 //Doing stuff
 const { app, BrowserWindow, session} = require('electron')
+const fetch = require('cross-fetch')
+const { ElectronBlocker } = require('@cliqz/adblocker-electron')
 const path = require('path')
 const contextMenu = require('electron-context-menu')
 const URL = require('url').URL
+
+ElectronBlocker.fromPrebuiltAdsAndTracking(fetch).then((blocker) => {
+  blocker.enableBlockingInSession(session.defaultSession);
+})
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -65,19 +71,19 @@ function createWindow () {
 }
 
 app.whenReady().then(() => {
-  session
-  .fromPartition('some-partition')
-  .setPermissionRequestHandler((webContents, permission, callback) => {
-    const parsedUrl = new URL(webContents.getURL())
+    session
+    .fromPartition('some-partition')
+    .setPermissionRequestHandler((webContents, permission, callback) => {
+      const parsedUrl = new URL(webContents.getURL())
 
-    if (permission === 'notifications') {
-      callback(false)
-    }
+      if (permission === 'notifications') {
+        callback(false)
+      }
 
-    if (parsedUrl.protocol !== 'https:' || parsedUrl.host !== 'example.com') {
-      return callback(false)
-    }
-  })
+      if (parsedUrl.protocol !== 'https:' || parsedUrl.host !== 'blocus.ch') {
+        return callback(false)
+      }
+    })
 
   createWindow()
 
