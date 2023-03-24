@@ -28,6 +28,10 @@ Made with [Electron](https://github.com/electron/electron) (without node integra
 - Blocus ChatRoom (WebApp PHP instant messaging with encrypted database). wip
 
 
+### Features
+- Integrated ad blocker (uBlock Origin)
+- Other fun things
+
 ### In future updates
 
 - Customisable url toolbar.
