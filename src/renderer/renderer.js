@@ -107,6 +107,7 @@ tabGroup.on("tab-active", (tab, tabGroup) => {
   urlBar.setAttribute("value", url)
   tab.once("webview-dom-ready", (tab) => {
     webview = tab.webview
+    webview.setUserAgent('Blocus Web Browser')
     webview.addEventListener('did-start-loading', (e) => {
       url = webview.getURL()
       tab.setTitle("Loading...")
@@ -141,11 +142,9 @@ tabGroup.on("tab-active", (tab, tabGroup) => {
   }
   if(webviewTypeOf === 'object' && !webview.isLoadingMainFrame()){
     if(!webview.isLoading()){
-      webview.addEventListener('dom-ready', () => {
-        webview = tab.webview
-        url = webview.getURL()
-        urlBar.setAttribute("value", url)
-      })
+      webview = tab.webview
+      url = webview.getURL()
+      urlBar.setAttribute("value", url)
     }
   }
 })
