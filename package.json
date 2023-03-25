@@ -1,6 +1,6 @@
 {
   "name": "blocus-web-browser",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Secure web browser with integrated privacy front-end",
   "main": "main.js",
   "config": {
@@ -59,7 +59,9 @@
     "electron": "^23.1.4"
   },
   "dependencies": {
+    "@cliqz/adblocker-electron": "^1.26.2",
     "@electron-forge/maker-rpm": "^6.0.5",
+    "cross-fetch": "^3.1.5",
     "electron-context-menu": "^3.6.1",
     "electron-tabs": "^1.0.1"
   }

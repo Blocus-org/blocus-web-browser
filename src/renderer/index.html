@@ -9,7 +9,7 @@
         <style>body{margin: 0;}</style>
     </head>
         <div class="titlebar">
-          <p class="version">Blocus Web Browser (alpha v0.0.6)</p>
+          <p class="version">Blocus Web Browser (alpha v0.0.7)</p>
         </div>
     <body style="border-radius: 500px">
         <tab-group class="bigtabgroup"new-tab-button="true" sortable="true" position="1">
@@ -70,10 +70,10 @@
                   display: flex;
                   -webkit-user-select: none;
                   position: fixed;
-                  top: 30px;
+                  top: 27px;
                   width: 100%;
-                  min-height: 25px;
-                  max-height: 25px;
+                  min-height: 18px;
+                  max-height: 18px;
                   z-index: 10;
                   background-color: #757575;
                   max-height: 10%;
@@ -113,7 +113,7 @@
                   margin-bottom: 3px;
                 }
 
-                .forwbutton, .backbutton, .refreshbutton, .stopbutton{
+                .forwbutton, .backbutton, .refreshorstopbutton{
                   border-radius: 360px;
                   border: none;
                   background-color: transparent;
@@ -123,18 +123,17 @@
                   padding: 0px;
                 }
 
-                .forwbutton:hover, .backbutton:hover, .refreshbutton:hover, .stopbutton:hover{
+                .forwbutton:hover, .backbutton:hover, .refreshorstopbutton:hover{
                   background-color: #E0E0E0;
                 }
 
-                .imgforw, .imgback, .refreshbuttonimg, .stopbuttonimg{
+                .imgforw, .imgback, .refreshorstopbuttonimg{
                   position: relative;
                   height: 14px;
                   width: 14px;
                   margin: auto;
                   display: block;
                 }
-
             </style>
         </tab-group>
         <script type="text/javascript" src="../../node_modules/electron-tabs/dist/electron-tabs.js"></script>
