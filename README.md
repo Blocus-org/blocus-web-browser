@@ -37,14 +37,8 @@ Made with [Electron](https://github.com/electron/electron) in pure JS (without n
 
 ## Contribution
 
-- How to contribute?
-    - See [how to report a vulnerability](https://github.com/Zqfd/blocus-web-browser/blob/main/SECURITY.md)
-    - Fork or clone the main branch
-    - Do improvements, modifications, etc
-    - Push to a new branch in the blocus web browser repository (pseudo-nameofthepatch)
-    - Pull request explaining changes
-    - Feel free to ask some questions: [discussion](https://github.com/Zqfd/blocus-web-browser/discussions)
-
+- Please read the [code of conduct](https://github.com/Zqfd/blocus-web-browser/blob/main/CODE_OF_CONDUCT.md)
+- Then go to the [contribution area](https://github.com/Zqfd/blocus-web-browser/blob/main/CONTRIBUTING.md)
 ## Related repos
 
 - [Blocus Search Engine](https://github.com/Zqfd/blocus-search-engine)
