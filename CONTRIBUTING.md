@@ -12,7 +12,7 @@ Welcome to the Blocus Web Browser contributing aera. You can find here every inf
 
   - ***The project is still in Alpha and updates a lot! (more than two updates a week sometimes)*** So, if you got somes big modifications to do, try to stay updated and feel free to ask to join directly the repository collaborators:
  
-     - Verify somone else is not working on the same modification/fix ([here]())
+     - Verify somone else is not working on the same modification/fix ([here](https://github.com/Zqfd/blocus-web-browser/issues))
      - Fork the MAIN branch to your account ([how?](#fork))
      - Do your mofifications/fixes ([how?](#modifs))
      - Pull request to ***master*** ([how?](#pull-request))
