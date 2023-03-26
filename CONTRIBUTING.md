@@ -1,9 +1,9 @@
 # Thank you for being here!
-Welcome to the Blocus Web Browser contributing aera. You can find here every information you need to contribute to this project. Please read our [Code of conduct]().
+Welcome to the Blocus Web Browser contributing aera. You can find here every information you need to contribute to this project. Please read our [Code of conduct](https://github.com/Zqfd/blocus-web-browser/blob/main/CODE_OF_CONDUCT.md).
 <br><br>First of all, ***--I do not know if everything is good like this, I will maybe update this file sometimes--***, so feel free to contribute here too for corrections! 
 <br><br>Welcome to begginers and pros to teach or learn something useful! You will need some tools for contributing the best way. 
 
-- If you are a begginer with Git and Github, do not be afraid, I was too, when I created this repository. But I can explain you if you need with the ([how?]()) label. You can also read some [docs](https://docs.github.com/fr/get-started), 
+- If you are a begginer with Git and Github, do not be afraid, I was too, when I created this repository. But I can explain you if you need with the (how?) label. You can also read some [docs](https://docs.github.com/fr/get-started), 
   it's always a good thing and the one from Github is good.
   
 # How to contribute?
@@ -15,8 +15,8 @@ Welcome to the Blocus Web Browser contributing aera. You can find here every inf
      - Verify somone else is not working on the same modification/fix ([here]())
      - Fork the MAIN branch to your account ([how?](#fork))
      - Do your mofifications/fixes ([how?](#modifs))
-     - Pull request with this [template]() to a new branch: yourpseudo-nameofthepatch ([how?](#pull-request))
-     - If your modifications/fixes fit with our objectives, it will be merged to the ***master*** branch for next alpha relaease. It is the moment we merge master and main branches.
+     - Pull request to ***master*** ([how?](#pull-request))
+     - If your modifications/fixes fit with our objectives, it will be merged to the ***master*** branch for next alpha relaease. It is the moment we merge master into main.
 <br>
 
 ## <a name="fork">How to fork a repository</a>
@@ -34,7 +34,7 @@ Git is a free and open source distributed version control system designed to han
 - Run git GUI
 - Chose 'Clone Existing Repository'
 - Source Location: https://github.com/yourusername/your-fork
-- Target Directory: 'C://WhereYouWant/***your-fork***'
+- Target Directory: C://WhereYouWant/***your-fork***
 - Clone Type: Standard
 - Select 'Recursively clone submodules too'
 - Then clone it
@@ -47,14 +47,14 @@ There's some steps to do before:
 - One your modifications are displayed (in green and red), verify for errors.
 - Click on stage changed (you can also put file one by one by opening the commit tab in the toolbar and clicking on Stage to commit, if you did something wrong you can unstage files with the same method if they've not been pushed already)
 - Then write a brief descritpion of changes in the Commit Message area.
-- DO NOT FORGET TO SIGN OFF UNLESS WE WON'T BE ABLE TO MERGE YOUR BRANCH ([how?]()) 
+- Sign off 
 - Click on commit
-- SIGN OFF AGAIN (my gad...)
+- Sign off again
 - Click on 'push'
 - Select 'Remote: origin' (It is the path from where you did clone the repository. You can change it in the Remote tab in the toolbar)
 - Unselect all transfer options
 - Push
-- ***Your fork has now been updated on Github and you can create a pull request to the master branch of the original repository with this [template]()***
+- ***Your fork has now been updated on Github and you can create a pull request to the master branch of the original repository!***
 
 I hope you found it useful, feel free to suggest modifications or precisions, open a discussion, or directly send us messages on blocus-org@proton.me(may take some time to get an answer), if you need more infos/help.
 
