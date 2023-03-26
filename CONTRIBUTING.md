@@ -27,7 +27,7 @@ You will need a Github account:
 - Be sure that 'fork only main branch' is selected
 - Click on 'Create fork'
 
-## <a name='modif'>How to modifiy a fork</a>
+## <a name='modifs'>How to modifiy a fork</a>
 ### Git GUI Windows 10
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 - Be sure to have Git last version installed
