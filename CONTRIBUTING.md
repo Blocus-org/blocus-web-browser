@@ -14,7 +14,7 @@ Welcome to the Blocus Web Browser contributing aera. You can find here every inf
  
      - Verify somone else is not working on the same modification/fix ([here](https://github.com/Zqfd/blocus-web-browser/issues))
      - Fork the MAIN branch to your account ([how?](#fork))
-     - Do your mofifications/fixes ([how?](#modifs))
+     - Do your modifications/fixes ([how?](#modifs))
      - Pull request to ***master*** ([how?](#pull-request))
      - If your modifications/fixes fit with our objectives, it will be merged to the ***master*** branch for next alpha relaease. It is the moment we merge master into main.
 <br>
