@@ -28,7 +28,7 @@ Made with [Electron](https://github.com/electron/electron) in pure JS (without n
 ## Install
 
 - Testing installation
-    - [Releases](https://github.com/Zqfd/blocus-web-browser/tags) (Windows & Debian)
+    - [Releases](https://github.com/blocus-org/blocus-web-browser/tags) (Windows & Debian)
 
 - Dev installation
     - [Windows](#installwin)
