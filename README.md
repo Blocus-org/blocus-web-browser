@@ -1,4 +1,4 @@
-# Blocus Web Browser ***-- A work in progress Alpha 0.0.7***
+# Blocus Web Browser ***DISCONTINUED***
 ![preview](src/img/preview.png)
 
 - Tired of being tracked?
